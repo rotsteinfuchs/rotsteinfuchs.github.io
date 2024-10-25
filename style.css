@@ -65,3 +65,11 @@ img {
     border-radius: 60px;
     object-fit: cover;
 }
+
+.overlay-img {
+    position: relative;
+    bottom: 60px;
+    left: 60px;
+    width: 400px;
+    height: 400px;
+}
