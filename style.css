@@ -17,6 +17,12 @@ body {
     color: var(--text);
 }
 
+.msg-overlay-container {
+    position: absolute;
+    bottom: 0;
+    
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: repeat(5, 33.33vw);
