@@ -34,6 +34,9 @@ body {
 
 .msg-overlay {
     padding: 0 60px;
+    &::after {
+        content: '×';
+    }
 }
 
 .msg-overlay.yellow {
