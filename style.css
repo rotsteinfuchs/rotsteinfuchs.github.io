@@ -6,6 +6,10 @@
     --primary: #7209B7;
     --secondary: #4CC9F0;
     --accent: #F72585;
+    --warn: #ffe183;
+    --error: #ff8383;
+    --error-dark: #f00;
+    --warn-dark: #ffb400;
 }
 
 body {
@@ -18,9 +22,29 @@ body {
 }
 
 .msg-overlay-container {
-    position: absolute;
-    bottom: 0;
-    
+    position: absolute fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.msg-overlay {
+    padding: 0 60px;
+}
+
+.msg-overlay.yellow {
+    background-color: var(--warn);
+    border-bottom: 5px solid var(--warn-dark);
+}
+
+.msg-overlay.red {
+    background-color: var(--error);
+    border-bottom: 5px solid var(--error-dark);
 }
 
 .grid-container {
