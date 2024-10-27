@@ -3,13 +3,12 @@
 :root {
     --text: #100C12;
     --background: #F6F1F9;
+    --background2: #c0c0c0;
     --primary: #7209B7;
     --secondary: #4CC9F0;
     --accent: #F72585;
-    --warn: #ffe183;
-    --error: #ff8383;
-    --error-dark: #f00;
-    --warn-dark: #ffb400;
+    --warn: #ffee00;
+    --error: #ff0000;
 }
 
 body {
@@ -35,26 +34,27 @@ body {
 .msg-overlay {
     padding: 0 60px;
     position: relative;
-}
-
-.msg-overlay .close {
-    border-radius: 20px;
-    background-color: var(--secondary);
-    position: absolute;
-    top: -15px;
-    right: -15px;
-    border: none;
-    padding: 12px;
+    &::after {
+        content: "";
+        height: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
 }
 
 .msg-overlay.yellow {
-    background-color: var(--warn);
-    border-bottom: 5px solid var(--warn-dark);
+    background-color: var(--background2);
+    &::after {
+        background-color: var(--warn);
+    }
 }
 
 .msg-overlay.red {
-    background-color: var(--error);
-    border-bottom: 5px solid var(--error-dark);
+    background-color: var(--background2);
+    &::after {
+        background-color: var(--error);
+    }
 }
 
 .grid-container {
