@@ -43,9 +43,9 @@ body {
     border-radius: 50%;
     background-color: var(--secondary);
     color: var(--background);
-    position: absolute;
-    top: -50%;
-    right: -50%;
+    position: absolute;  
+    top: -15px;
+    right: -15px;
 }
 
 .msg-overlay.yellow {
