@@ -71,12 +71,12 @@ body {
     }
 }
 
-.grid-container {
+.content-container {
+}
+
+section {
     display: grid;
-    grid-template-columns: repeat(5, 33.33vw);
-    overflow-x: hidden;
-    overflow-y: scroll;
-    width: 100%;
+    grid-template-columns: repeat(3, 33.33%);
 }
 
 .grid-item {
