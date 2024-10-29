@@ -49,7 +49,7 @@ body {
     animation-play-state: paused;
 }
 
-@keyframes msgLine {
+@keyframes loadingLine {
     from {
         width: 0%;
     } to {
