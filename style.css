@@ -71,12 +71,19 @@ body {
     }
 }
 
-.content-container {
-}
-
 section {
     display: grid;
     grid-template-columns: repeat(3, 33.33%);
+}
+
+/* For Testing */
+
+section:nth-child(2) {
+    margin-left: 33.33vw;
+}
+
+section:nth-child(3) {
+    margin-left: 66.66vw;
 }
 
 .grid-item {
@@ -87,6 +94,10 @@ section {
     background-color: var(--background);
     height: 100vh;
     position: relative;
+    justify-content: center;
+
+    grid-column-start: var(--start);
+    grid-column-end: var(--end);
 }
 
 .hero {
@@ -96,8 +107,9 @@ section {
 
 .title {
     background-color: var(--accent);
-    box-shadow: inset 0 0 0 47px var(--background);
+    box-shadow: inset 0 0 0 40px var(--background);
     width: 100%;
+    text-align: center;
 }
 
 h1.outline {
