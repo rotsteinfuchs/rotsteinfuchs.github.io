@@ -34,6 +34,7 @@ body {
 .msg-overlay {
     padding: 0 60px;
     position: relative;
+
     &::after {
         content: "";
         height: 5px;
@@ -52,13 +53,16 @@ body {
 @keyframes loadingLine {
     from {
         width: 0%;
-    } to {
+    }
+
+    to {
         width: 100%;
     }
 }
 
 .msg-overlay.yellow {
     background-color: var(--background2);
+
     &::after {
         background-color: var(--warn);
     }
@@ -66,6 +70,7 @@ body {
 
 .msg-overlay.red {
     background-color: var(--background2);
+
     &::after {
         background-color: var(--error);
     }
@@ -74,6 +79,11 @@ body {
 #wrapper {
     overflow-x: scroll;
     overflow-y: hidden;
+
+    background-image: url('background-stripes.svg');
+    background-repeat: repeat;
+    background-size: 100vw;
+    background-attachment: local;
 }
 
 section {
@@ -96,7 +106,7 @@ section:nth-child(3) {
     flex-direction: column;
     padding: 60px;
     box-sizing: border-box;
-    background-color: var(--background);
+    /* background-color: var(--background); */
     height: 100vh;
     position: relative;
     justify-content: center;
