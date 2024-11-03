@@ -20,6 +20,10 @@ body {
     color: var(--text);
 }
 
+h2, h3, h4, h5, h6 {
+    font-family: "Space Mono", "Courier New", "Courier", monospace;
+}
+
 .msg-overlay-container {
     position: fixed;
     bottom: 30px;
@@ -100,6 +104,8 @@ section:nth-child(2) {
 section:nth-child(3) {
     margin-left: 66.66vw;
 }
+
+/*  */
 
 .grid-item {
     display: flex;
