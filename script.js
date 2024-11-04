@@ -1,7 +1,7 @@
 // # Made by ChatGPT
 
-window.addEventListener('scroll', function() {
-    const wrapper = document.getElementById('wrapper');
+window.addEventListener('scroll', function () {
+    const wrapper = document.getElementById("wrapper");
     const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
     const maxHorizontalScroll = wrapper.scrollWidth - wrapper.clientWidth;
     let scrollY = window.scrollY || window.pageYOffset;
@@ -9,9 +9,10 @@ window.addEventListener('scroll', function() {
     wrapper.scrollLeft = newHorizontalScroll;
 });
 
-const sections = document.querySelectorAll('section');
-sections.forEach((section, index) => {
-    const shift = 33.33 * (index - 1)
-    section.style.transform = `translateX(${shift}vw)`;
-});
-
+function shiftSections () {
+    let sections = document.querySelectorAll('section');
+    sections.forEach((section, index) => {
+        const shift = 33.33 * index;
+        section.style.transform = `translateX(${shift}vw)`;
+    });
+}

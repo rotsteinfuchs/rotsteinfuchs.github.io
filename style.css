@@ -94,18 +94,6 @@ section {
     grid-template-columns: repeat(3, 33.33vw);
 }
 
-/* For Testing */
-
-section:nth-child(2) {
-    margin-left: 33.33vw;
-}
-
-section:nth-child(3) {
-    margin-left: 66.66vw;
-}
-
-/*  */
-
 .grid-item {
     display: flex;
     flex-direction: column;
