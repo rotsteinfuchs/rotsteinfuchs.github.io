@@ -1,18 +1,18 @@
 // # Made by ChatGPT
 
-window.addEventListener('scroll', function () {
-    const wrapper = document.getElementById("wrapper");
+window.addEventListener('scroll', function() {
+    const gridContainer = document.getElementById('grid-container');
     const documentHeight = document.documentElement.scrollHeight - window.innerHeight;
-    const maxHorizontalScroll = wrapper.scrollWidth - wrapper.clientWidth;
+    const maxHorizontalScroll = gridContainer.scrollWidth - gridContainer.clientWidth;
     let scrollY = window.scrollY || window.pageYOffset;
     let newHorizontalScroll = (scrollY / documentHeight) * maxHorizontalScroll;
-    wrapper.scrollLeft = newHorizontalScroll;
+    gridContainer.scrollLeft = newHorizontalScroll;
 });
 
-function shiftSections () {
-    let sections = document.querySelectorAll('section');
-    sections.forEach((section, index) => {
-        const shift = 33.33 * index;
-        section.style.transform = `translateX(${shift}vw)`;
+var msgOverlays = document.querySelectorAll('.msg-overlay');
+
+msgOverlays.forEach(msgOverlay => {
+    msgOverlay.addEventListener('animationend', () => {
+        msgOverlay.style.display = 'none';
     });
-}
+});
