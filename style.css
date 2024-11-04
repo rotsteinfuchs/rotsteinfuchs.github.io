@@ -20,10 +20,6 @@ body {
     color: var(--text);
 }
 
-h2, h3, h4, h5, h6 {
-    font-family: "Space Mono", "Courier New", "Courier", monospace;
-}
-
 .msg-overlay-container {
     position: fixed;
     bottom: 30px;
@@ -38,7 +34,6 @@ h2, h3, h4, h5, h6 {
 .msg-overlay {
     padding: 0 60px;
     position: relative;
-
     &::after {
         content: "";
         height: 5px;
@@ -57,16 +52,13 @@ h2, h3, h4, h5, h6 {
 @keyframes loadingLine {
     from {
         width: 0%;
-    }
-
-    to {
+    } to {
         width: 100%;
     }
 }
 
 .msg-overlay.yellow {
     background-color: var(--background2);
-
     &::after {
         background-color: var(--warn);
     }
@@ -74,24 +66,17 @@ h2, h3, h4, h5, h6 {
 
 .msg-overlay.red {
     background-color: var(--background2);
-
     &::after {
         background-color: var(--error);
     }
 }
 
-#wrapper {
-    overflow: hidden;
-
-    background-image: url('background-stripes.svg');
-    background-repeat: repeat;
-    background-size: 100vw;
-    background-attachment: local;
-}
-
-section {
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 33.33vw);
+    grid-template-columns: repeat(5, 33.33vw);
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
 }
 
 .grid-item {
@@ -99,13 +84,9 @@ section {
     flex-direction: column;
     padding: 60px;
     box-sizing: border-box;
-    /* background-color: var(--background); */
+    background-color: var(--background);
     height: 100vh;
     position: relative;
-    justify-content: center;
-
-    grid-column-start: var(--start);
-    grid-column-end: var(--end);
 }
 
 .hero {
@@ -115,9 +96,8 @@ section {
 
 .title {
     background-color: var(--accent);
-    box-shadow: inset 0 0 0 40px var(--background);
+    box-shadow: inset 0 0 0 47px var(--background);
     width: 100%;
-    text-align: center;
 }
 
 h1.outline {

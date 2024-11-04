@@ -8,9 +8,10 @@
     <script src="script.js"></script>
     <title>Rotsteinfuchs</title>
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
 </head>
 
-<body onload="shiftSections();">
+<body>
     <div class="msg-overlay-container">
         <div class="msg-overlay yellow">
             <p>
@@ -18,35 +19,27 @@
             </p>
         </div>
     </div>
-
-    <div id="wrapper">
-        <section id="hero">
-            <div class="grid-item" style="--start: 2; --end: 4;">
-                <div class="title">
-                    <h1 class="outline">Hi, I'm Rotsteinfuchs.</h1>
-                    <h1>Hi, I'm <em>Rotsteinfuchs</em>.</h1>
-                    <h1 class="outline">Hi, I'm Rotsteinfuchs.</h1>
-                </div>
+    <div class="grid-container" id="grid-container">
+        <div class="grid-item hero" style="grid-column: 2 / 4;">
+            <div class="title">
+                <h1 class="outline">Hi, I'm Rotsteinfuchs.</h1>
+                <h1>Hi, I'm <em>Rotsteinfuchs</em>.</h1>
+                <h1 class="outline">Hi, I'm Rotsteinfuchs.</h1>
             </div>
-        </section>
-        <section>
-            <div class="grid-item" style="--start: 1; --end: 3;">
-                <h2>About me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
-                <img src="logo_chart.svg"
-                    alt="Stylized Fox Logo with chart showing programming languages: PHP, Python, Java, C++ (Arduino), CSS / HTML, Javascript, and MCFunction."
-                    class="overlay-img">
-            </div>
-        </section>
-        <section>
-            <div class="grid-item" style="--start: 1; --end: 2;">
-                <img src="https://minecraft.wiki/images/SereneSnow.gif" alt="Placeholder">
-            </div>
-            <div class="grid-item" style="--start: 3; --end: 4;">
-                <h2>Current projects</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
-            </div>
-        </section>
+        </div>
+        <div class="grid-item" style="grid-column: 2 / 4;">
+            <h2>About me</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <img src="logo_chart.svg" alt="Stylized Fox Logo with chart showing programming languages: PHP, Python, Java, C++ (Arduino), CSS / HTML, Javascript, and MCFunction." class="overlay-img">
+        </div>
+        <div class="grid-item" style="grid-column: 5; grid-row: 2;"></div>
+        <div class="grid-item" style="grid-column: 2 / 4;">
+            <img src="https://minecraft.wiki/images/SereneSnow.gif" alt="Placeholder">
+        </div>
+        <div class="grid-item" style="grid-column: 5; grid-row: 3;">
+            <h2>Current projects</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit...</p>
+        </div>
     </div>
 </body>
 
