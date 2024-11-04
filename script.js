@@ -8,3 +8,10 @@ window.addEventListener('scroll', function() {
     let newHorizontalScroll = (scrollY / documentHeight) * maxHorizontalScroll;
     wrapper.scrollLeft = newHorizontalScroll;
 });
+
+const sections = document.querySelectorAll('section');
+sections.forEach((section, index) => {
+    const shift = 33.33 * (index - 1)
+    section.style.transform = `translateX(${shift}vw)`;
+});
+
