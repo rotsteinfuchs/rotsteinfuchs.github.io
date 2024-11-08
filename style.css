@@ -3,12 +3,10 @@
 :root {
     --text: #100C12;
     --background: #F6F1F9;
-    --background2: #fad5ff;
+    --background2: #FAD5FF;
     --primary: #7209B7;
     --secondary: #4CC9F0;
     --accent: #F72585;
-    --warn: #ffee00;
-    --error: #ff0000;
 }
 
 body {
@@ -20,7 +18,11 @@ body {
     color: var(--text);
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Space Mono", "Courier New", "Courier", monospace;
 }
 
@@ -53,6 +55,31 @@ h2, h3, h4, h5, h6 {
     background-repeat: repeat;
     background-size: 100vw;
     background-attachment: local;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+nav a {
+    display: block;
+    background-color: var(--text);
+    padding: 10px;
+    border-radius: 100%;
+    border: 10px solid var(--background);
+}
+
+nav a img {
+    height: 75px;
+    width: 75px;
+    vertical-align: bottom;
 }
 
 section {
@@ -98,7 +125,7 @@ h2::after {
     display: block;
 }
 
-img {
+.full-item-img {
     width: 100%;
     height: 100%;
     border-radius: 60px;
