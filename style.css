@@ -150,12 +150,8 @@ h1 {
 }
 
 h1.outline {
-    color: var(--background);
-    text-shadow:
-        1px 1px 0 var(--text),
-        -1px 1px 0 var(--text),
-        -1px -1px 0 var(--text),
-        1px -1px 0 var(--text);
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text);
 }
 
 h2::after {
