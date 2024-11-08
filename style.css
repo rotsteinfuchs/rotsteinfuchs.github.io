@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Space%20Mono:700|Poppins:400');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
     --text: #100C12;
     --background: #F6F1F9;
     --background2: #FAD5FF;
-    --primary: #7209B7;
-    --secondary: #4CC9F0;
-    --accent: #F72585;
+    --primary: #FF1880;
+    --secondary: #E6CFFA;
+    --accent: #5EB4FF;
 }
 
 html {
@@ -26,12 +26,16 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+a {
     font-family: "Space Mono", "Courier New", "Courier", monospace;
 }
 
-a, a:hover, a:active, a:visited {
-    color: var(--accent);
+a,
+a:hover,
+a:active,
+a:visited {
+    color: var(--primary);
 }
 
 a::before {
@@ -44,7 +48,12 @@ a::before {
 }
 
 a:hover::before {
-    width: 9px;
+    width: 10px;
+}
+
+em {
+    font-style: normal;
+    color: var(--primary);
 }
 
 .msg-overlay-container {
@@ -95,6 +104,7 @@ nav a {
     padding: 10px;
     border-radius: 100%;
     border: 10px solid var(--background);
+
     &::before {
         content: none;
     }
@@ -129,14 +139,23 @@ section {
 }
 
 .title {
-    background-color: var(--accent);
+    background-color: var(--secondary);
     box-shadow: inset 0 0 0 40px var(--background);
     width: 100%;
     text-align: center;
 }
 
+h1 {
+    font-weight: 500;
+}
+
 h1.outline {
     color: var(--background);
+    text-shadow:
+        1px 1px 0 var(--text),
+        -1px 1px 0 var(--text),
+        -1px -1px 0 var(--text),
+        1px -1px 0 var(--text);
 }
 
 h2::after {
