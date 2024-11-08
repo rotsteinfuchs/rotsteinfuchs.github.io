@@ -26,6 +26,23 @@ h6 {
     font-family: "Space Mono", "Courier New", "Courier", monospace;
 }
 
+a, a:hover, a:active, a:visited {
+    color: var(--accent);
+}
+
+a::before {
+    content: ">";
+    display: inline-block;
+    text-decoration: underline;
+    width: 0px;
+    overflow: clip;
+    transition: .4s;
+}
+
+a:hover::before {
+    width: 9px;
+}
+
 .msg-overlay-container {
     position: fixed;
     bottom: 30px;
