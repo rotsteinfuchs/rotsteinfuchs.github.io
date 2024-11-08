@@ -3,12 +3,10 @@
 :root {
     --text: #100C12;
     --background: #F6F1F9;
-    --background2: #fad5ff;
+    --background2: #FAD5FF;
     --primary: #7209B7;
     --secondary: #4CC9F0;
     --accent: #F72585;
-    --warn: #ffee00;
-    --error: #ff0000;
 }
 
 body {
@@ -20,7 +18,11 @@ body {
     color: var(--text);
 }
 
-h2, h3, h4, h5, h6 {
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: "Space Mono", "Courier New", "Courier", monospace;
 }
 
@@ -38,51 +40,18 @@ h2, h3, h4, h5, h6 {
 .msg-overlay {
     padding: 0 60px;
     position: relative;
-
-    &::after {
-        content: "";
-        height: 5px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        animation: loadingLine 5s linear forwards;
-        animation-play-state: running;
-    }
-}
-
-.msg-overlay:hover::after {
-    animation-play-state: paused;
-}
-
-@keyframes loadingLine {
-    from {
-        width: 0%;
-    }
-
-    to {
-        width: 100%;
-    }
 }
 
 .msg-overlay.yellow {
     background-color: var(--background2);
-
-    &::after {
-        background-color: var(--warn);
-    }
 }
 
 .msg-overlay.red {
     background-color: var(--background2);
-
-    &::after {
-        background-color: var(--error);
-    }
 }
 
 #wrapper {
     overflow: hidden;
-
     background-image: url('background-stripes.svg');
     background-repeat: repeat;
     background-size: 100vw;
@@ -95,6 +64,9 @@ nav {
     justify-content: center;
     padding: 20px;
     gap: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
 nav a {
@@ -102,6 +74,7 @@ nav a {
     background-color: var(--text);
     padding: 10px;
     border-radius: 100%;
+    border: 10px solid var(--background);
 }
 
 nav a img {
@@ -120,11 +93,9 @@ section {
     flex-direction: column;
     padding: 60px;
     box-sizing: border-box;
-    /* background-color: var(--background); */
     height: 100vh;
     position: relative;
     justify-content: center;
-
     grid-column-start: var(--start);
     grid-column-end: var(--end);
 }
