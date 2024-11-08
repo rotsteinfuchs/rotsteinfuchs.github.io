@@ -9,6 +9,10 @@
     --accent: #F72585;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background-image: url(background.png);
@@ -91,6 +95,9 @@ nav a {
     padding: 10px;
     border-radius: 100%;
     border: 10px solid var(--background);
+    &::before {
+        content: none;
+    }
 }
 
 nav a img {
@@ -152,7 +159,7 @@ h2::after {
 .overlay-img {
     position: absolute;
     bottom: 60px;
-    right: -200px;
+    right: 60px;
     height: 400px;
     width: auto;
 }
