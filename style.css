@@ -39,7 +39,7 @@ a,
 a:hover,
 a:active,
 a:visited {
-    color: var(--secondary);
+    color: var(--accent);
 }
 
 a::before {
