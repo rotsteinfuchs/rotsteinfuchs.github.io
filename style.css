@@ -3,7 +3,6 @@
 :root {
     --text: #100C12;
     --background: #F6F1F9;
-    --background2: #FAD5FF;
     --primary: #FF1880;
     --secondary: #E6CFFA;
     --accent: #5EB4FF;
@@ -40,7 +39,7 @@ a,
 a:hover,
 a:active,
 a:visited {
-    color: var(--primary);
+    color: var(--secondary);
 }
 
 a::before {
@@ -50,6 +49,7 @@ a::before {
     width: 0px;
     overflow: clip;
     transition: .4s;
+    vertical-align: bottom;
 }
 
 a:hover::before {
@@ -74,18 +74,11 @@ em {
 
 .msg-overlay {
     padding: 0 60px;
+    background-color: var(--secondary);
 }
 
 .msg-overlay p {
     text-align: center;
-}
-
-.msg-overlay.yellow {
-    background-color: var(--background2);
-}
-
-.msg-overlay.red {
-    background-color: var(--background2);
 }
 
 #wrapper {
