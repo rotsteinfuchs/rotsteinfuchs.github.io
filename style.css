@@ -49,7 +49,7 @@ a::before {
     width: 0px;
     overflow: clip;
     transition: .4s;
-    vertical-align: bottom;
+    vertical-align: baseline;
 }
 
 a:hover::before {
