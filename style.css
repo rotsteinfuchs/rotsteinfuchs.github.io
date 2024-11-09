@@ -24,7 +24,7 @@ body {
 }
 
 h1 {
-    font-size: 35pt;
+    font-size: 2rem;
     font-weight: 500;
 }
 
@@ -65,13 +65,15 @@ em {
 
 .msg-overlay-container {
     position: fixed;
-    bottom: 30px;
     width: 100%;
     z-index: 1;
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: center;
+    padding: 30px;
+    bottom: 0;
+    box-sizing: border-box;
 }
 
 .msg-overlay {
@@ -164,9 +166,8 @@ section {
 
 .title {
     background-color: var(--secondary);
-    box-shadow: inset 0 0 0 75px var(--background);
+    box-shadow: inset 0 0 0 50px var(--background);
     width: 100%;
-    height: 100%;
     align-content: center;
     text-align: center;
 }
@@ -197,6 +198,7 @@ h2::after {
     position: absolute;
     bottom: 60px;
     right: 60px;
-    height: 20vh;
-    width: auto;
+    width: 400px;
+    max-width: calc(100vw - 120px);
+    height: auto;
 }
