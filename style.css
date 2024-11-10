@@ -132,8 +132,10 @@ section {
 }
 
 @media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.4rem;
+    }
 
-    h1,
     h2,
     h3,
     h4,
@@ -141,7 +143,7 @@ section {
     h6,
     p,
     a {
-        font-size: 0.6rem;
+        font-size: 0.7rem;
     }
 
     #wrapper {
@@ -152,13 +154,15 @@ section {
 
     section {
         grid-template-rows: repeat(3, 33.33vh);
-        grid-column-start: auto;
-        grid-column-end: auto;
     }
 
     .grid-item {
         height: auto !important;
         width: 100vw;
+        grid-row-start: var(--start);
+        grid-row-end: var(--end);
+        grid-column-start: auto !important;
+        grid-column-end: auto !important;
     }
 }
 
