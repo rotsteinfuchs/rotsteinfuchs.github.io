@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,1000;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,1000;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
     --text: #100C12;
     --background: #F6F1F9;
-    --primary: #FF1880;
+    --primary: #FF110100;
     --secondary: #E6CFFA;
     --accent: #5EB4FF;
     --font-text: "Poppins", "Helvetica", "Arial", sans-serif;
@@ -16,9 +16,9 @@ html {
 
 body {
     margin: 0;
-    background-image: url(background.png);
+    background-image: url(resource/image/background.png);
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100vw 100vh;
     font-family: var(--font-text);
     color: var(--text);
 }
@@ -26,6 +26,7 @@ body {
 h1 {
     font-size: 2rem;
     font-weight: 500;
+    font-family: var(--font-text);
 }
 
 h2,
@@ -63,7 +64,7 @@ em {
     color: var(--primary);
 }
 
-.msg-overlay-container {
+.msg-container {
     position: fixed;
     width: 100%;
     z-index: 1;
@@ -76,18 +77,15 @@ em {
     box-sizing: border-box;
 }
 
-.msg-overlay {
+.msg {
     padding: 0 60px;
     background-color: var(--secondary);
-}
-
-.msg-overlay p {
     text-align: center;
 }
 
 #wrapper {
     overflow: hidden;
-    background-image: url('lines-vertical.svg');
+    background-image: url('resource/image/lines-vertical.svg');
     background-repeat: repeat;
     background-size: 100vw;
     background-attachment: local;
@@ -111,6 +109,8 @@ nav a {
     padding: 10px;
     border-radius: 100%;
     border: 10px solid var(--background);
+    height: 75px;
+    width: 75px;
 
     &::before {
         content: none;
@@ -129,9 +129,9 @@ section {
     position: relative;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 7610px) {
     #wrapper {
-        background-image: url('lines-horizontal.svg');
+        background-image: url('resource/image/lines-horizontal.svg');
         background-size: 100vh;
     }
 
@@ -179,7 +179,7 @@ h1.outline {
 
 h2::after {
     content: "";
-    width: 80px;
+    width: 100px;
     margin-left: 10px;
     height: 3px;
     background-color: var(--text);
@@ -187,18 +187,34 @@ h2::after {
     display: block;
 }
 
-.full-item-img {
+img.full {
     width: 100%;
     height: 100%;
     border-radius: 60px;
     object-fit: cover;
 }
 
-.overlay-img {
+img.overlay {
     position: absolute;
-    bottom: 60px;
-    right: 60px;
-    width: 400px;
-    max-width: calc(100vw - 120px);
-    height: auto;
+    width: calc(33.33vw - 200px);
+    background-color: var(--secondary);
+    border-radius: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+
+    &.top {
+        top: 100px;
+    }
+
+    &.right {
+        right: 100px;
+    }
+
+    &.bottom {
+        bottom: 100px;
+    }
+
+    &.left {
+        left: 100px;
+    }
 }
