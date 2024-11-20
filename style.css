@@ -195,6 +195,10 @@ h1.outline {
     -webkit-text-stroke: 1px var(--text);
 }
 
+h2 {
+    width: fit-content;
+}
+
 h2::after {
     content: "";
     width: 80px;
@@ -203,6 +207,13 @@ h2::after {
     background-color: var(--text);
     border-radius: 1.5px;
     display: block;
+    transition: .4s;
+}
+
+h2:hover::after {
+    width: 100%;
+    margin-left: 0;
+    margin-top: -8px;
 }
 
 img.full {
