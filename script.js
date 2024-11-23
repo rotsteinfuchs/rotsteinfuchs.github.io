@@ -15,9 +15,9 @@ function shiftSections () {
     sections.forEach((section, index) => {
         const shift = 33.33 * index;
         if (isMobile) {
-            section.style.transform = `translateX(${shift}vw)`;
-        } else {
             section.style.transform = `translateY(${shift}vh)`;
+        } else {
+            section.style.transform = `translateX(${shift}vw)`;
         }
     });
 }
