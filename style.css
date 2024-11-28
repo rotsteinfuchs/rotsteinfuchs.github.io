@@ -118,7 +118,7 @@ nav a {
         content: "";
         position: absolute;
         border-radius: 100%;
-        background-color: #6070da;
+        background-color: var(--color);
         width: 0px;
         height: 0px;
         transition: width .1s, height .1s;
