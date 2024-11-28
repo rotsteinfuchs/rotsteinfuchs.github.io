@@ -81,6 +81,12 @@ em {
     padding: 0 60px;
     background-color: var(--secondary);
     text-align: center;
+
+    background: rgba(173, 141, 202, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(173, 141, 202, 0.1);
+    backdrop-filter: blur( 6px );
+    -webkit-backdrop-filter: blur( 6px );
+    border-radius: 10px;
 }
 
 #wrapper {
@@ -108,9 +114,8 @@ nav {
 nav a {
     display: block;
     background-color: var(--text);
-    padding: 10px;
     border-radius: 100%;
-    border: 10px solid var(--background);
+    padding: 5px;
     height: 75px;
     width: 75px;
 
@@ -138,8 +143,8 @@ nav a {
 nav a img {
     height: 75px;
     width: 75px;
-    vertical-align: bottom;
     position: absolute;
+    border-radius: 50%;
 }
 
 section {
