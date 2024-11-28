@@ -121,7 +121,8 @@ nav a {
         background-color: #6070da;
         width: 0px;
         height: 0px;
-        transition: .4s;
+        transition: width .1s, height .1s;
+        pointer-events: none;
 
         left: var(--mouse-x, 0);
         top: var(--mouse-y, 0);
@@ -129,8 +130,8 @@ nav a {
     }
 
     &:hover::before {
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
     }
 }
 
