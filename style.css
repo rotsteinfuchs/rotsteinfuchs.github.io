@@ -16,7 +16,7 @@ html {
 
 body {
     margin: 0;
-    background-image: url(resource/image/background.png);
+    background-image: url(images/background.png);
     background-attachment: fixed;
     background-size: cover;
     font-family: var(--font-text);
@@ -91,7 +91,7 @@ em {
 
 #wrapper {
     overflow: hidden;
-    background-image: url('resource/image/lines-vertical.svg');
+    background-image: url('images/lines-vertical.svg');
     background-repeat: repeat;
     background-size: 100vw;
     background-attachment: local;
@@ -169,7 +169,7 @@ section {
     }
 
     #wrapper {
-        background-image: url('resource/image/lines-horizontal.svg');
+        background-image: url('images/lines-horizontal.svg');
         background-size: 100vh;
         flex-direction: row;
     }
