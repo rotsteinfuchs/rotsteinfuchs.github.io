@@ -5,11 +5,12 @@ function isMobile() {
 }
 
 function diagonalScroll() {
-    const wrapper = document.getElementById("wrapper");    
-    const maxX = wrapper.getBoundingClientRect().width - window.innerWidth;
-    const maxY = wrapper.getBoundingClientRect().height - window.innerHeight;
+    const wrapper = document.getElementById("wrapper");
+    const maxX = wrapper.offsetWidth - window.innerWidth;
+    const maxY = wrapper.offsetHeight - window.innerHeight;
     const x = window.scrollX || window.pageXOffset;
     const y = window.scrollY || window.pageYOffset;
+
     if (isMobile()) {
         window.scrollTo({ top: x * (maxY / maxX) });
     } else {
@@ -22,9 +23,9 @@ function shiftSections() {
     sections.forEach((section, index) => {
         const shift = 33.33 * index;
         if (isMobile()) {
-            section.style.transform = `translateY(${shift}vh)`;
+            section.style.marginTop = `${shift}vh`;
         } else {
-            section.style.transform = `translateX(${shift}vw)`;
+            section.style.marginLeft = `${shift}vw`;
         }
     });
 }

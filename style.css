@@ -10,10 +10,6 @@
     --font-heading: "Space Mono", "Courier New", "Courier", monospace;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     margin: 0;
     background-image: url(images/background.png);
@@ -90,13 +86,14 @@ em {
 }
 
 #wrapper {
-    overflow: hidden;
     background-image: url('images/lines-vertical.svg');
     background-repeat: repeat;
     background-size: 100vw;
     background-attachment: local;
     display: flex;
     flex-direction: column;
+    height: fit-content;
+    width: fit-content;
 }
 
 nav {
