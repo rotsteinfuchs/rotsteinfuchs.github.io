@@ -1,5 +1,5 @@
 @media (prefers-color-scheme: light) {
-:root {
+  :root {
     --foreground: #100c12;
     --background: #f6f1f9;
     --primary: #ff1a81;
@@ -20,8 +20,8 @@
 
 html,
 body {
-  max-width: 100vw;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 body {
@@ -44,12 +44,45 @@ body::before {
   z-index: -1;
 }
 
+section {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 33.33%);
+}
+
+section:nth-child(1) {
+  margin-left: 0%;
+}
+
+section:nth-child(2) {
+  margin-left: 33.33%;
+}
+
+section:nth-child(1)>div {
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+section:nth-child(2)>div {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Space Mono";
 }
 
 img {
