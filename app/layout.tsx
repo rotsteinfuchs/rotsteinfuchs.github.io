@@ -14,7 +14,7 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Rotsteinfuchs Profile Page",
+  title: "Home | Rotsteinfuchs",
   description: "Just my profile page (;",
 };
 
