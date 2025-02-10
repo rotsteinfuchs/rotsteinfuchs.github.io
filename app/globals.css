@@ -1,12 +1,20 @@
+@media (prefers-color-scheme: light) {
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --foreground: #100c12;
+    --background: #f6f1f9;
+    --primary: #ff1a81;
+    --secondary: #e7d1fa;
+    --accent: #5cb3ff;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground: #f6f1f9;
+    --background: #100c12;
+    --primary: #e60067;
+    --secondary: #1b052e;
+    --accent: #0057a3;
   }
 }
 
@@ -19,7 +27,7 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Rubik, Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

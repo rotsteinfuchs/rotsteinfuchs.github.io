@@ -58,7 +58,7 @@ section>div:has(.title) {
 }
 
 .title {
-  background-color: #e6cffa;
+  background: var(--secondary);
   text-align: center;
   padding: 4px;
   white-space: nowrap;
@@ -76,20 +76,12 @@ section>div:has(.title) {
   margin-bottom: -1.5rem;
 }
 
-.page h2,
-.page h3,
-.page h4,
-.page h5,
-.page h6 {
-  font-family: "Space Mono";
-}
-
 .page h2::after {
   content: "";
   width: 0;
   height: 3px;
   margin-left: 8px;
-  background-color: black;
+  background: var(--foreground);
   display: block;
   transition: 0.4s;
 }
@@ -105,10 +97,10 @@ section>div:has(.title) {
 }
 
 .highlight {
-  color: #ff1880;
+  color: var(--primary);
   position: relative;
   clip-path: inset(0);
-  background-color: transparent;
+  background: transparent;
 }
 
 .highlight::before {
@@ -118,7 +110,7 @@ section>div:has(.title) {
   height: 100%;
   left: -100%;
   transition: left 0.4s;
-  background-color: #ff1880;
+  background: var(--primary);
 }
 
 .highlight:hover::before {
