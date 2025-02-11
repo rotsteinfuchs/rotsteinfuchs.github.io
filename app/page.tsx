@@ -1,8 +1,22 @@
+'use client'
+
 import Image from "next/image";
 import styles from "./page.module.css";
 import { useEffect } from "react";
 
 export default function Home() {
+  useEffect(() => {
+    function handleScroll() {
+      const scrollY = window.scrollY;
+      const viewHeight = window.innerHeight;
+      const viewWidth = window.innerWidth;
+      window.scrollTo((scrollY / viewHeight) * (viewWidth / 3), scrollY);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    window.addEventListener("resize", handleScroll);
+  }, []);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
