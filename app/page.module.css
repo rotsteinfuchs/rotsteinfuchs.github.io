@@ -60,11 +60,11 @@ section>div:has(.title) {
   position: absolute;
   width: 100%;
   height: 100%;
-  left: -100%;
+  left: -101%;
   transition: left 0.4s;
   background: var(--primary);
 }
 
 .highlight:hover::before {
-  left: 100%;
+  left: 101%;
 }
