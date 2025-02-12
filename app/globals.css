@@ -28,6 +28,7 @@ body {
   font-family: Rubik, Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
 }
 
 /* Background image */
@@ -80,8 +81,6 @@ section>div {
 *::before,
 *::after {
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 h2,
