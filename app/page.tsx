@@ -22,7 +22,9 @@ export default function Home() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add(styles.underline);
+            setTimeout(() => {
+              entry.target.classList.add(styles.underline);
+            }, 500); // Offset by 0.5 seconds
           } else {
             entry.target.classList.remove(styles.underline);
           }
