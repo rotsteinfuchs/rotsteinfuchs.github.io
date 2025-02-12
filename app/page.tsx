@@ -22,7 +22,9 @@ export default function Home() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add(styles.underline);
+            setTimeout(() => {
+              entry.target.classList.add(styles.underline);
+            }, 500); // Offset by 0.5 seconds
           } else {
             entry.target.classList.remove(styles.underline);
           }
@@ -54,8 +56,13 @@ export default function Home() {
         <div>
           <h2>About me</h2>
           <p>
-            I am 14-year-old developer and designer from Germany.<br />
-            I like creating websites, and I&apos;m currently learning<br />
+            I&apos;m a 14-year-old developer and designer from Germany. I design websites using Figma and am currently expanding my skills with Next.js and React. Along the way, I&apos;ve gained experience with Tailwind and various programming languages such as Java, Python, and C++ for Arduino.<br />
+            <br />
+            Recently, I switched to Linux and I really don&apos;t regret it: I love its performance and customizability. When I&apos;m not coding, you&apos;ll often find me in the world of Minecraft — recording, animating and cutting cinematic shots, experimenting with command blocks, and developing data packs. I enjoy the challenge of working within creative constraints to solve problems in unique ways.<br />
+            <br />
+            Let&apos;s build something amazing together! 🚀<br />
+            <small>(This text was partially generated using ChatGPT)</small><br />
+            <br />
             <a href="https://www.nextjs.org/">
               <Image
                 src="/badge_nextjs.svg"
@@ -77,8 +84,6 @@ export default function Home() {
                 width={113}
                 height={28} />
             </a><br />
-            I&apos;m currently creating a Minecraft trailer video for <a href="https://www.mctorn.de/">MCTorn</a>.<br />
-            Sometimes I use Python and Java or C++ for my Arduino.
           </p>
         </div>
       </section>
