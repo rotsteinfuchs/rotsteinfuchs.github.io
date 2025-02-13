@@ -1,8 +1,3 @@
-.page section>div {
-  padding: 60px;
-  background: var(--background);
-}
-
 section>div:has(.title) {
   display: flex;
   justify-content: center;

@@ -49,6 +49,8 @@ section {
 }
 
 section>div {
+  padding: 60px;
+  background: var(--background);
   height: 100%;
 }
 
