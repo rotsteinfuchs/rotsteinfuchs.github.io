@@ -20,6 +20,11 @@ section>div:has(.title) {
     margin: 1rem 1rem;
   }
 
+  .page {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
 }
 
 .title h1:first-child {
