@@ -15,6 +15,13 @@ section>div:has(.title) {
   margin: 1rem 4rem;
 }
 
+@media only screen and (max-width: 768px) {
+  .title h1 {
+    margin: 1rem 1rem;
+  }
+
+}
+
 .title h1:first-child {
   margin-top: -1.5rem;
 }
