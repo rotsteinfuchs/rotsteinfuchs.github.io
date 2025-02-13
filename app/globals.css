@@ -49,7 +49,7 @@ section {
 }
 
 section>div {
-height: 100vh;
+  height: 100vh;
   padding: 60px;
   overflow: scroll;
   background: var(--background);
@@ -63,7 +63,7 @@ height: 100vh;
 
   section>div {
     min-height: 100vh;
-  height: 100%;
+    height: 100%;
     padding: 30px;
   }
 }
