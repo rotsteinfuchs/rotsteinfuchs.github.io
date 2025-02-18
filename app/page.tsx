@@ -5,6 +5,8 @@ import styles from "./page.module.css";
 import { useEffect } from "react";
 
 export default function Home() {
+
+  // Diagonal scrolling effect
   useEffect(() => {
     function handleScroll() {
       const scrollY = window.scrollY;
@@ -17,6 +19,7 @@ export default function Home() {
     window.addEventListener("resize", handleScroll);
   }, []);
 
+  // Heading underline effect
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
