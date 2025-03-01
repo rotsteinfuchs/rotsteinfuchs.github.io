@@ -44,7 +44,51 @@ export default function Home() {
     };
   }, []);
 
+  useEffect(() => {
+    function handleMouseMove(event: MouseEvent) {
+      const mouseX = event.clientX + "px";
+      const mouseY = event.clientY + "px";
+      document.documentElement.style.setProperty("--mouse-x", mouseX);
+      document.documentElement.style.setProperty("--mouse-y", mouseY);
+    }
+
+    window.addEventListener("mousemove", handleMouseMove);
+
+    return () => {
+      window.removeEventListener("mousemove", handleMouseMove);
+    };
+  }, []);
+
   return (
+    <>
+      <nav className={styles.link_container}>
+        <Link
+          href="https://www.discord.com/channels/@rotsteinfuchs"
+          target="_blank"
+          title="My Discord account"
+          style={{ "--color": "#7289DA" } as React.CSSProperties}
+        >
+          <Image
+            src="discord-mark-invert.svg"
+            alt="Discord Logo"
+            width={500}
+            height={500}
+          />
+        </Link>
+        <Link
+          href="https://www.github.com/rotsteinfuchs"
+          target="_blank"
+          title="My GitHub account"
+          style={{ "--color": "#2DBA4E" } as React.CSSProperties}
+        >
+          <Image
+            src="github-mark-invert.svg"
+            alt="Github Logo"
+            width={500}
+            height={500}
+          />
+        </Link>
+      </nav>
     <div className={styles.page}>
       <section>
         <div>
