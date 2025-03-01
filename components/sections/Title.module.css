@@ -37,7 +37,8 @@ div:has(> .title) {
 .highlight {
   color: var(--primary);
   position: relative;
-  clip-path: inset(0);
+  clip-path: inset();
+  overflow: clip;
   background: transparent;
 }
 
@@ -48,6 +49,7 @@ div:has(> .title) {
   height: 100%;
   left: -101%;
   transition: left 0.4s;
+  cursor: text;
   background: var(--primary);
 }
 
