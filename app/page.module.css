@@ -1,4 +1,9 @@
-section>div:has(.title) {
+.page section > div {
+  padding: 60px;
+  background: var(--background);
+}
+
+section > div:has(.title) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,7 +55,6 @@ section>div:has(.title) {
 }
 
 .outline {
-  /* Color override if webkit is supported */
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px var(--foreground);
 }
