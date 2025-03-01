@@ -48,13 +48,30 @@ section {
 }
 
 section > div {
-  height: 100%;
+  height: 100vh;
+  padding: 60px;
+  overflow: scroll;
+  background: var(--background);
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    min-height: 100vh;
+    height: 100%;
+  }
+
+  section > div {
+    min-height: 100vh;
+    height: 100%;
+    padding: 30px;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   section {
     display: grid;
     grid-template-columns: repeat(3, 33.33%);
+    height: 100vh;
   }
 
   section:nth-child(1) {
