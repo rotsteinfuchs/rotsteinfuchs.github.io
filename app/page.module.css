@@ -24,7 +24,6 @@
   width: 75px;
   box-sizing: content-box;
   clip-path: circle();
-  position: relative;
 }
 
 .link_container a::before {
