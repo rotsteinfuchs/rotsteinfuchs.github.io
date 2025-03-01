@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import styles from "@/app/page.module.css";
+import styles from "./useHeadingUnderline.module.css";
 
 export function useHeadingUnderline() {
   useEffect(() => {
@@ -8,10 +8,10 @@ export function useHeadingUnderline() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setTimeout(() => {
-              entry.target.classList.add(styles.underline);
+              entry.target.classList.add(styles.underlineActive);
             }, 500); // Offset by 0.5 seconds
           } else {
-            entry.target.classList.remove(styles.underline);
+            entry.target.classList.remove(styles.underlineActive);
           }
         });
       },

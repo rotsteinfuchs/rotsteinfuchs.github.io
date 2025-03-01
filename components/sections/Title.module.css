@@ -1,9 +1,4 @@
-.page section > div {
-  padding: 60px;
-  background: var(--background);
-}
-
-section > div:has(.title) {
+div:has(> .title) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,13 +17,7 @@ section > div:has(.title) {
 
 @media only screen and (max-width: 768px) {
   .title h1 {
-    margin: 1rem 1rem;
-  }
-
-  .page {
-    display: flex;
-    flex-direction: column;
-    gap: 60px;
+    margin: 1rem 0.5rem;
   }
 }
 
@@ -40,21 +29,7 @@ section > div:has(.title) {
   margin-bottom: -1.5rem;
 }
 
-.page h2::after {
-  content: "";
-  width: 0;
-  height: 3px;
-  margin-left: 8px;
-  background: var(--foreground);
-  display: block;
-  transition: 0.4s;
-}
-
-.page h2.underline::after {
-  width: 80px;
-}
-
-.outline {
+.title h1.outline {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px var(--foreground);
 }

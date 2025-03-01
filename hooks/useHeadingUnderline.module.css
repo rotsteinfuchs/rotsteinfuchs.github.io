@@ -1,0 +1,13 @@
+.underline::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  margin-left: 8px;
+  background: var(--foreground);
+  display: block;
+  transition: 0.4s;
+}
+
+.underlineActive::after {
+  width: 80px;
+}

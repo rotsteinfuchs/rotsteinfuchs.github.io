@@ -1,8 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useMouseMove } from "@/hooks/useMouseMove";
 import styles from "./SocialLinks.module.css";
 
 export function SocialLinks() {
+  useMouseMove();
   return (
     <nav id={styles.container}>
       <Link
