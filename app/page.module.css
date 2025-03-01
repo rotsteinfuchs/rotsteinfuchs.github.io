@@ -24,23 +24,26 @@
   width: 75px;
   box-sizing: content-box;
   clip-path: circle();
-  &::before {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-    background-color: var(--color);
-    width: 0px;
-    height: 0px;
-    transition: width 0.1s, height 0.1s;
-    pointer-events: none;
-    left: var(--mouse-x, 0);
-    top: var(--mouse-y, 0);
-    transform: translate(-50%, -50%);
-  }
-  &:hover::before {
-    width: 50px;
-    height: 50px;
-  }
+  position: relative;
+}
+
+.link_container a::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background-color: var(--color);
+  width: 0px;
+  height: 0px;
+  transition: width 0.1s, height 0.1s;
+  pointer-events: none;
+  left: var(--mouse-x, 0);
+  top: var(--mouse-y, 0);
+  transform: translate(-50%, -50%);
+}
+
+.link_container a:hover::before {
+  width: 50px;
+  height: 50px;
 }
 
 .link_container a img {
@@ -90,7 +93,6 @@ section > div:has(.title) {
 }
 
 .outline {
-  /* Color override if webkit is supported */
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px var(--foreground);
 }

@@ -32,7 +32,6 @@ body {
 }
 
 /* Background image */
-
 body::before {
   content: "";
   position: fixed;
@@ -48,7 +47,7 @@ section {
   width: 100vw;
 }
 
-section>div {
+section > div {
   height: 100%;
 }
 
@@ -66,12 +65,12 @@ section>div {
     margin-left: 33.33%;
   }
 
-  section:nth-child(1)>div {
+  section:nth-child(1) > div {
     grid-column-start: 2;
     grid-column-end: 4;
   }
 
-  section:nth-child(2)>div {
+  section:nth-child(2) > div {
     grid-column-start: 1;
     grid-column-end: 3;
   }
