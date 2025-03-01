@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "@/app/page.module.css";
+import styles from "./SocialLinks.module.css";
 
 export function SocialLinks() {
   return (
-    <nav className={styles.link_container}>
+    <nav id={styles.container}>
       <Link
         href="https://www.discord.com/channels/@rotsteinfuchs"
         target="_blank"
@@ -14,8 +14,8 @@ export function SocialLinks() {
         <Image
           src="discord-mark-invert.svg"
           alt="Discord Logo"
-          width={500}
-          height={500}
+          width={75}
+          height={75}
         />
       </Link>
       <Link
@@ -27,8 +27,8 @@ export function SocialLinks() {
         <Image
           src="github-mark-invert.svg"
           alt="Github Logo"
-          width={500}
-          height={500}
+          width={75}
+          height={75}
         />
       </Link>
     </nav>
