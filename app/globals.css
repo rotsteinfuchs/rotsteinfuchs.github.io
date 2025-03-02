@@ -55,6 +55,12 @@ section > div {
 }
 
 @media only screen and (max-width: 768px) {
+  div:has(> section) {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+
   section {
     min-height: 100vh;
     height: 100%;
