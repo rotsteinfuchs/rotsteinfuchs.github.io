@@ -6,7 +6,7 @@ import styles from "./SocialLinks.module.css";
 export function SocialLinks() {
   useMouseMove();
   return (
-    <nav id={styles.container}>
+    <div id={styles.component}>
       <Link
         href="https://www.discord.com/channels/@rotsteinfuchs"
         target="_blank"
@@ -33,6 +33,6 @@ export function SocialLinks() {
           height={75}
         />
       </Link>
-    </nav>
+    </div>
   );
 }
