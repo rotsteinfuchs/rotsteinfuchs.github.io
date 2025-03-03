@@ -37,7 +37,7 @@ div:has(> .title) {
 .highlight {
   color: var(--primary);
   position: relative;
-  clip-path: inset();
+  clip-path: inset(0);
   overflow: clip;
   background: transparent;
 }
