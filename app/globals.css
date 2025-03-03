@@ -26,6 +26,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Rubik, Arial, Helvetica, sans-serif;
+  font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
@@ -105,14 +106,6 @@ section > div {
   box-sizing: border-box;
 }
 
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Space Mono";
-}
-
 img {
   vertical-align: bottom;
 }
@@ -120,5 +113,51 @@ img {
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
+  }
+}
+
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Space Mono", "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+
+html {
+  font-size: 100%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small {
+  font-size: 0.75rem;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
   }
 }
