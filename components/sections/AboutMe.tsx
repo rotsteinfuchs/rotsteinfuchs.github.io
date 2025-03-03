@@ -6,9 +6,9 @@ import styles from "@/hooks/useHeadingUnderline.module.css";
 export function AboutMe() {
   useHeadingUnderline();
   return (
-    <section>
+    <section id={styles.section}>
       <div>
-        <h2 className={styles.underline}>About me</h2>
+        <h2>About me</h2>
         <p>
           I&apos;m a 14-year-old developer and designer from Germany. I design
           websites using Figma and am currently expanding my skills with Next.js
@@ -54,7 +54,6 @@ export function AboutMe() {
               height={28}
             />
           </Link>
-          <br />
         </p>
       </div>
     </section>

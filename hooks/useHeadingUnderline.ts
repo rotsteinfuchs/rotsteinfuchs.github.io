@@ -8,10 +8,10 @@ export function useHeadingUnderline() {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             setTimeout(() => {
-              entry.target.classList.add(styles.underlineActive);
+              entry.target.classList.add(styles.underline_active);
             }, 500); // Offset by 0.5 seconds
           } else {
-            entry.target.classList.remove(styles.underlineActive);
+            entry.target.classList.remove(styles.underline_active);
           }
         });
       },
