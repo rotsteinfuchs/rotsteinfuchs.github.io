@@ -54,6 +54,6 @@
   background: var(--primary);
 }
 
-.highlight:hover::before {
+.highlight:hover::before, .highlight:active::before {
   left: 101%;
 }
