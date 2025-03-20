@@ -6,7 +6,12 @@ export function useDiagonalScroll() {
       const scrollY = window.scrollY;
       const viewHeight = window.innerHeight;
       const viewWidth = window.innerWidth;
-      window.scrollTo((scrollY / viewHeight) * (viewWidth / 3), scrollY);
+      const divElement = document.querySelector("body > div") as HTMLElement;
+      if (divElement) {
+        divElement.style.transform = `translate(${
+          0 - (scrollY / viewHeight) * (viewWidth / 3)
+        }px, 0)`;
+      }
     }
 
     window.addEventListener("scroll", handleScroll);

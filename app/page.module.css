@@ -1,4 +1,4 @@
-#section > div {
+div:has(> #title) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,6 +54,7 @@
   background: var(--primary);
 }
 
-.highlight:hover::before, .highlight:active::before {
+.highlight:hover::before,
+.highlight:active::before {
   left: 101%;
 }
