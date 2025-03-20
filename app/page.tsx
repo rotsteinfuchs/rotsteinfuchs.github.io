@@ -10,7 +10,7 @@ export default function Home() {
   useDiagonalScroll();
   useHeadingUnderline();
   return (
-    <div id="page">
+    <div>
       <SocialLinks />
       <div>
         <section>
