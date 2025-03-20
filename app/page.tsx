@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
 import { useDiagonalScroll } from "@/hooks/useDiagonalScroll";
 import { SocialLinks } from "@/components/SocialLinks";
 import { useHeadingUnderline } from "@/hooks/useHeadingUnderline";
@@ -50,32 +48,6 @@ export default function Home() {
               Let&apos;s build something amazing together! 🚀
               <br />
               <small>(This text was partially generated using ChatGPT)</small>
-              <br />
-              <br />
-              <Link href="https://www.nextjs.org/">
-                <Image
-                  src="/badge_nextjs.svg"
-                  alt="NextJS"
-                  width={98.75}
-                  height={28}
-                />
-              </Link>
-              <Link href="https://react.dev/">
-                <Image
-                  src="/badge_react.svg"
-                  alt="React"
-                  width={86.25}
-                  height={28}
-                />
-              </Link>
-              <Link href="https://tailwindcss.com/">
-                <Image
-                  src="/badge_tailwind.svg"
-                  alt="Tailwind"
-                  width={113}
-                  height={28}
-                />
-              </Link>
             </p>
           </div>
         </section>
