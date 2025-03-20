@@ -3,14 +3,16 @@ import { useEffect } from "react";
 export function useDiagonalScroll() {
   useEffect(() => {
     function handleScroll() {
-      const scrollY = window.scrollY;
-      const viewHeight = window.innerHeight;
-      const viewWidth = window.innerWidth;
-      const divElement = document.querySelector("body > div") as HTMLElement;
-      if (divElement) {
-        divElement.style.transform = `translate(${
-          0 - (scrollY / viewHeight) * (viewWidth / 3)
-        }px, 0)`;
+      if (window.innerWidth > 768) {
+        const scrollY = window.scrollY;
+        const viewHeight = window.innerHeight;
+        const viewWidth = window.innerWidth;
+        const divElement = document.querySelector("body > div") as HTMLElement;
+        if (divElement) {
+          divElement.style.transform = `translate(${
+            0 - (scrollY / viewHeight) * (viewWidth / 3)
+          }px, 0)`;
+        }
       }
     }
 
