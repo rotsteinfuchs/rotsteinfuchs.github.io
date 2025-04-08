@@ -126,23 +126,11 @@ html {
 }
 
 h1 {
-  font-size: calc(1rem + 1vw);
+  font-size: calc(1.2rem + 1vw);
 }
 
 h2 {
-  font-size: 2rem;
-}
-
-h3 {
-  font-size: 1.75rem;
-}
-
-h4 {
-  font-size: 1.5rem;
-}
-
-h5 {
-  font-size: 1.25rem;
+  font-size: calc(1.4rem + 0.5vw);
 }
 
 small {

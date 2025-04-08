@@ -10,9 +10,9 @@ export default function Home() {
   useDiagonalScroll();
   useHeadingUnderline();
   return (
-    <div id="page">
+    <div>
       <SocialLinks />
-      <div>
+      <div id="content">
         <section>
           <div>
             <div id={styles.title}>
