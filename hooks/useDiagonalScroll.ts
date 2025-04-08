@@ -7,11 +7,11 @@ export function useDiagonalScroll() {
         const scrollY = window.scrollY;
         const viewHeight = window.innerHeight;
         const viewWidth = window.innerWidth;
-        const divElement = document.querySelector("body > div") as HTMLElement;
+        const divElement = document.querySelector("div#content") as HTMLElement;
         if (divElement) {
-          divElement.style.transform = `translate(${
+          divElement.style.transform = `translateX(${
             0 - (scrollY / viewHeight) * (viewWidth / 3)
-          }px, 0)`;
+          }px)`;
         }
       }
     }

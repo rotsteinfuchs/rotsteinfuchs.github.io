@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
       <SocialLinks />
-      <div>
+      <div id="content">
         <section>
           <div>
             <div id={styles.title}>
