@@ -1,4 +1,4 @@
-h2::after {
+.h2::after {
   content: "";
   width: 0;
   height: 3px;
@@ -8,6 +8,6 @@ h2::after {
   transition: 0.4s;
 }
 
-h2.underline_active::after {
+.h2.underline_active::after {
   width: 80px;
 }

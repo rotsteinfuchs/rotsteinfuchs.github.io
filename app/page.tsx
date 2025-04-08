@@ -3,7 +3,7 @@
 import { useDiagonalScroll } from "@/hooks/useDiagonalScroll";
 import { SocialLinks } from "@/components/SocialLinks";
 import { useHeadingUnderline } from "@/hooks/useHeadingUnderline";
-import "@/hooks/useHeadingUnderline.module.css";
+import headingUnderlineStyles from "@/hooks/useHeadingUnderline.module.css";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -27,7 +27,7 @@ export default function Home() {
         </section>
         <section>
           <div>
-            <h2>About me</h2>
+            <h2 className={headingUnderlineStyles.h2}>About me</h2>
             <p>
               I&apos;m a 14-year-old developer and designer from Germany. I
               design websites using Figma and am currently expanding my skills

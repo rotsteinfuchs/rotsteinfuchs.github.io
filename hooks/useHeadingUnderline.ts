@@ -18,7 +18,7 @@ export function useHeadingUnderline() {
       { threshold: 0.1 } // Adjust threshold for visibility sensitivity
     );
 
-    const headings = document.querySelectorAll("h2");
+    const headings = document.querySelectorAll("." + styles.h2);
     headings.forEach((h2) => observer.observe(h2));
 
     return () => {
