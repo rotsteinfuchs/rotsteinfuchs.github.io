@@ -9,5 +9,5 @@ h2::after {
 }
 
 h2.underline_active::after {
-  width: 80px; 
+  width: 80px;
 }
